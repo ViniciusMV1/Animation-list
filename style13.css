@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.box{
+    position: relative;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+}
+
+.a {
+    animation: movimentar 4s ease infinite;
+    background-color: darkblue;
+}
+
+.b{
+    animation: movimentar 4s ease infinite;
+    animation-delay: 2s;
+}
+
+.c{
+    animation: movimentar 4s ease infinite;
+    animation-delay: 4s;
+    background-color: darkviolet;
+}
+
+@keyframes movimentar {
+     0%{
+        top: 0;
+     }
+     25%{
+        top: 200px;
+     }
+     50%{
+        top: 0;
+     }
+     75%{
+        top: -200px;
+     }
+     100%{
+        top: 0;
+     }
+}
+
+.home{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}

@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.box14{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: mover 4s ease infinite;
+    border-radius: 100px;
+}
+
+@keyframes mover {
+    0%{
+        top: 0%;
+        left: 0%;
+    }
+
+    25%{
+        top: 10%;
+        left: 40%;
+    }
+    50%{
+        top: -40%;
+        left: -10%;
+    }
+    75%{
+        top: -5%;
+        left: -45%;
+    }
+    87%{
+        top: 25%;
+        left: 15%;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+    }
+}
+
+.home{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}

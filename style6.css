@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.box6{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    animation: girar 3s ease-in-out infinite;
+}
+
+@keyframes girar{
+    0%{
+        transform: rotateZ(0deg);
+        background-color: aliceblue;
+    }
+    12%{
+        transform: rotateZ(45deg);
+        background-color: chartreuse;
+    }
+    25%{
+        transform: rotateZ(90deg);
+        background-color: darkorange;
+    }
+    37%{
+        transform: rotateZ(135deg);
+        background-color: darkred;
+    }
+    50%{
+        transform: rotateZ(180deg);
+        background-color: darkblue;
+    }
+    62%{
+        transform: rotateZ(225deg);
+        background-color: darkmagenta;
+    }
+    75%{
+        transform: rotateZ(270deg);
+        background-color: darkviolet;
+    }
+    87%{
+        transform: rotateZ(315deg);
+        background-color: darkturquoise;
+    }
+    100%{
+        transform: rotateZ(360deg);
+        background-color:mediumspringgreen;
+    }
+}
+
+.home{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}

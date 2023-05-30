@@ -1,0 +1,72 @@
+body{
+    background-color: darkturquoise;
+}
+
+.header{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.git{
+    text-decoration: none;
+}
+
+img{
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+.tiltle{
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkviolet;
+}
+
+.tiltle > h1{
+    margin: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 60px;
+}
+
+section{
+    left: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 100px;
+    row-gap: 40px;
+}
+
+section > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: darkorchid;
+    border-radius: 0;
+    font-family: 'Courier New';
+    text-decoration: none;
+    color: darkturquoise;
+}
+
+section > a:hover{
+    background-color: darkorchid;
+    color: white;
+    transition: 1.3s;
+    transform: rotate(360deg);
+}
+

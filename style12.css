@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    border: 2px solid white;
+    animation: descer 3s ease;
+}
+
+.login > form{
+    flex-direction: column;
+    display: flex;
+    padding: 6px;
+    color: black;
+    font-family: 'Courier' cursive;
+}
+
+.login > div {
+    display: flex;
+    width: fit-content;
+    padding: 6px;
+}
+
+.buttons > button {
+    margin-left: 10px;
+}
+
+@keyframes descer {
+    from {
+        bottom: 900px;
+    }
+    to{
+        bottom: 0;
+    }
+
+}
+
+.home{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}
